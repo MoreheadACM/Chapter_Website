@@ -1,0 +1,108 @@
+<html>
+<head>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script language="Javascript"></script>
+
+<title>Morehead ACM</title>
+
+<style type="text/css">
+  /* CSS goes here */
+  
+  body{
+  background-color: #0043a2;
+  }
+  
+  #header
+  {
+  display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-width: 4px;
+  }
+  
+  #menuWrap { /* the wrapper for the menu, holding buttons */
+	width: 1200px;
+	height: 50px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-width: 4px;
+  }
+  
+  .button { /* class to control the menu buttons */
+	width: 200px;
+	height: 50px;
+	float: left;
+	display: inline-block;
+  }
+  
+  #mainWrap { /* the wrapper for the panels */
+	width: 1200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-width: 4px;
+  }
+  
+  .panel { /* a class to control characteristics for all 3 panels */
+	display: inline-block;
+	height: 600px;
+	float: left;
+	border-width: 4px;
+  }
+  
+  #leftPanel { /* holds info for the left panel */
+	width: 175px;
+	padding-right: 25px;
+  }
+  
+  #rightPanel { /* holds info for the right panel */
+	width: 175px;
+	padding-left: 25px;
+  }
+  
+  #midPanel { /* holds info for the main/middle panel */
+	width: 800px;
+  }
+  
+  
+  
+</style>
+
+</head>
+
+<body>
+  <img id = "header" width = "1200px" height = "150px"></img>
+  
+  <br />
+  <div id = "menuWrap">
+	<img class="button"></img>
+	<img class="button"></img>
+	<img class="button"></img>
+	<img class="button"></img>
+	<img class="button"></img>
+	<img class="button"></img>
+  </div>
+  <br /><br />
+  <div id = "mainWrap">
+	<img id="leftPanel" class="panel"></img>
+	<img id="midPanel" class="panel"></img>
+	<img id="rightPanel" class="panel"></img>
+  </div>
+  
+  
+</body>
+
+<script>
+	/////////////////////////////////////////////////
+	// Functions to be called with onmouseover for //
+	// buttons, to change image on and off hover.  //
+	// The id of the button is passed.             //
+	/////////////////////////////////////////////////
+	function HoverOn(ID)
+		{document.getElementById(ID).src= "path/to/image";}
+	function HoverOff(ID)
+		{document.getElementById(ID).src="path/to/image";}
+</script>
+</html>
