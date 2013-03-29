@@ -8,19 +8,9 @@
 </head>
 
 <body>
-
-  <img id = "header" width = "1200px" height = "150px"></img>
+  <!-- include navigation bar and header from external html -->
+  <?php include('includes/navbarAndHeader.html'); ?>
   
-  <br />
-  <div id = "menuWrap">
-	<img class="button"></img>
-	<img class="button"></img>
-	<img class="button"></img>
-	<img class="button"></img>
-	<img class="button"></img>
-	<img class="button"></img>
-  </div>
-  <br /><br />
   <div id = "mainWrap">
 	<img id="leftPanel" class="panel"></img>
 	<img id="midPanel" class="panel"></img>
